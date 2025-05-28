@@ -21,11 +21,11 @@ const Index = () => {
               <span className="text-xl font-bold">AutoClub</span>
             </div>
             <div className="hidden md:flex space-x-6">
-              <button onClick={() => scrollToSection('home')} className="hover:text-red-400 transition-colors">Home</button>
-              <button onClick={() => scrollToSection('about')} className="hover:text-red-400 transition-colors">About</button>
-              <button onClick={() => scrollToSection('projects')} className="hover:text-red-400 transition-colors">Projects</button>
-              <button onClick={() => scrollToSection('events')} className="hover:text-red-400 transition-colors">Events</button>
-              <button onClick={() => scrollToSection('contact')} className="hover:text-red-400 transition-colors">Contact</button>
+              <button onClick={() => scrollToSection('home')} className="hover:text-red-400 transition-colors">Strona główna</button>
+              <button onClick={() => scrollToSection('about')} className="hover:text-red-400 transition-colors">O nas</button>
+              <button onClick={() => scrollToSection('projects')} className="hover:text-red-400 transition-colors">Projekty</button>
+              <button onClick={() => scrollToSection('events')} className="hover:text-red-400 transition-colors">Wydarzenia</button>
+              <button onClick={() => scrollToSection('contact')} className="hover:text-red-400 transition-colors">Kontakt</button>
             </div>
           </div>
         </div>
@@ -34,23 +34,23 @@ const Index = () => {
       {/* Hero Section */}
       <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-red-900/20 to-gray-900"></div>
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center opacity-20"></div>
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center opacity-20"></div>
         
         <div className="relative z-10 text-center px-4">
           <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent animate-fade-in">
             AutoClub
           </h1>
           <p className="text-xl md:text-2xl mb-4 text-gray-300 animate-fade-in">
-            University Automotive Enthusiasts
+            Uniwersyteccy Miłośnicy Motoryzacji
           </p>
           <p className="text-lg mb-8 text-red-400 italic animate-fade-in">
-            "The passion for cars starts here"
+            "Pasja do samochodów zaczyna się tutaj"
           </p>
           <Button 
             onClick={() => scrollToSection('about')}
             className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 text-lg animate-fade-in"
           >
-            Discover More
+            Dowiedz się więcej
           </Button>
         </div>
         
@@ -62,24 +62,25 @@ const Index = () => {
       {/* About Section */}
       <section id="about" className="py-20 px-4">
         <div className="container mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-red-400">About Us</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-red-400">O Nas</h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-6">Who We Are</h3>
+              <h3 className="text-2xl font-bold mb-6">Kim jesteśmy</h3>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                We are a passionate community of automotive enthusiasts at the university, united by our love for cars, 
-                engineering excellence, and the thrill of speed. From classic muscle cars to modern supercars, 
-                we celebrate all aspects of automotive culture.
+                Jesteśmy pasjonatami motoryzacji na uniwersytecie, zjednoczeni miłością do samochodów, 
+                doskonałości inżynieryjnej i emocji związanych z prędkością. Od klasycznych muscle cars po 
+                nowoczesne supersamochody - celebrujemy wszystkie aspekty kultury motoryzacyjnej.
               </p>
               <p className="text-gray-300 text-lg leading-relaxed">
-                Our club provides a platform for students to share knowledge, work on projects, 
-                and connect with like-minded individuals who share the same passion for automotive innovation.
+                Nasz klub zapewnia platformę dla studentów do dzielenia się wiedzą, pracy nad projektami 
+                i nawiązywania kontaktów z podobnie myślącymi osobami, które podzielają tę samą pasję do 
+                innowacji motoryzacyjnych.
               </p>
             </div>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80" 
-                alt="Car meet" 
+                src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80" 
+                alt="Spotkanie miłośników samochodów" 
                 className="rounded-lg shadow-2xl hover:scale-105 transition-transform duration-300"
               />
             </div>
@@ -90,14 +91,14 @@ const Index = () => {
       {/* Projects Section */}
       <section id="projects" className="py-20 px-4 bg-gray-800/50">
         <div className="container mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-red-400">Our Projects</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-red-400">Nasze Projekty</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="bg-gray-800 border-red-500/20 hover:border-red-500/50 transition-all duration-300 hover:scale-105">
               <div className="p-6">
                 <Trophy className="h-12 w-12 text-red-400 mb-4" />
                 <h3 className="text-xl font-bold mb-3 text-white">Formula Student</h3>
                 <p className="text-gray-300">
-                  Building and racing our own formula-style car in international competitions.
+                  Budujemy i ścigamy się naszym własnym samochodem typu formuła w międzynarodowych zawodach.
                 </p>
               </div>
             </Card>
@@ -105,9 +106,9 @@ const Index = () => {
             <Card className="bg-gray-800 border-red-500/20 hover:border-red-500/50 transition-all duration-300 hover:scale-105">
               <div className="p-6">
                 <Car className="h-12 w-12 text-red-400 mb-4" />
-                <h3 className="text-xl font-bold mb-3 text-white">Restoration Projects</h3>
+                <h3 className="text-xl font-bold mb-3 text-white">Projekty Renowacji</h3>
                 <p className="text-gray-300">
-                  Bringing classic cars back to life through collaborative restoration efforts.
+                  Przywracamy klasyczne samochody do życia poprzez wspólne wysiłki renowacyjne.
                 </p>
               </div>
             </Card>
@@ -115,9 +116,9 @@ const Index = () => {
             <Card className="bg-gray-800 border-red-500/20 hover:border-red-500/50 transition-all duration-300 hover:scale-105">
               <div className="p-6">
                 <Users className="h-12 w-12 text-red-400 mb-4" />
-                <h3 className="text-xl font-bold mb-3 text-white">Car Meets</h3>
+                <h3 className="text-xl font-bold mb-3 text-white">Spotkania Motoryzacyjne</h3>
                 <p className="text-gray-300">
-                  Regular gatherings to showcase members' vehicles and share automotive knowledge.
+                  Regularne spotkania, aby zaprezentować pojazdy członków i dzielić się wiedzą motoryzacyjną.
                 </p>
               </div>
             </Card>
@@ -128,27 +129,27 @@ const Index = () => {
       {/* Events Section */}
       <section id="events" className="py-20 px-4">
         <div className="container mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-red-400">Upcoming Events</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-red-400">Nadchodzące Wydarzenia</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="bg-gray-800 border-red-500/20 p-6 hover:border-red-500/50 transition-all duration-300">
               <div className="flex items-center mb-4">
                 <Calendar className="h-6 w-6 text-red-400 mr-3" />
-                <span className="text-red-400 font-semibold">March 15, 2025</span>
+                <span className="text-red-400 font-semibold">15 marca 2025</span>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Annual Car Show</h3>
+              <h3 className="text-xl font-bold mb-3 text-white">Coroczna Wystawa Samochodów</h3>
               <p className="text-gray-300">
-                Showcase the best vehicles from our members and local enthusiasts. Awards for various categories.
+                Prezentacja najlepszych pojazdów naszych członków i lokalnych entuzjastów. Nagrody w różnych kategoriach.
               </p>
             </Card>
             
             <Card className="bg-gray-800 border-red-500/20 p-6 hover:border-red-500/50 transition-all duration-300">
               <div className="flex items-center mb-4">
                 <Calendar className="h-6 w-6 text-red-400 mr-3" />
-                <span className="text-red-400 font-semibold">April 2, 2025</span>
+                <span className="text-red-400 font-semibold">2 kwietnia 2025</span>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Track Day Experience</h3>
+              <h3 className="text-xl font-bold mb-3 text-white">Dzień na Torze</h3>
               <p className="text-gray-300">
-                Professional racing circuit experience for members to test their vehicles safely.
+                Profesjonalne doświadczenie toru wyścigowego dla członków do bezpiecznego testowania swoich pojazdów.
               </p>
             </Card>
           </div>
@@ -158,39 +159,39 @@ const Index = () => {
       {/* Contact Section */}
       <section id="contact" className="py-20 px-4 bg-gray-800/50">
         <div className="container mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-red-400">Get In Touch</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-red-400">Skontaktuj się z nami</h2>
           <div className="grid md:grid-cols-2 gap-12">
             <div>
-              <h3 className="text-2xl font-bold mb-6">Join Our Community</h3>
+              <h3 className="text-2xl font-bold mb-6">Dołącz do naszej społeczności</h3>
               <p className="text-gray-300 text-lg mb-8">
-                Ready to fuel your passion for automotive excellence? Connect with us and become part of our growing community.
+                Gotowy do rozpalenia swojej pasji do doskonałości motoryzacyjnej? Skontaktuj się z nami i zostań częścią naszej rosnącej społeczności.
               </p>
               
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Mail className="h-6 w-6 text-red-400 mr-4" />
-                  <span className="text-gray-300">autoclub@university.edu</span>
+                  <span className="text-gray-300">autoclub@uniwersytet.edu.pl</span>
                 </div>
                 <div className="flex items-center">
                   <Phone className="h-6 w-6 text-red-400 mr-4" />
-                  <span className="text-gray-300">+1 (555) 123-4567</span>
+                  <span className="text-gray-300">+48 123 456 789</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="h-6 w-6 text-red-400 mr-4" />
-                  <span className="text-gray-300">Engineering Building, Room 201</span>
+                  <span className="text-gray-300">Budynek Inżynierski, Sala 201</span>
                 </div>
               </div>
             </div>
             
             <Card className="bg-gray-800 border-red-500/20 p-6">
-              <h3 className="text-xl font-bold mb-4 text-white">Meeting Schedule</h3>
+              <h3 className="text-xl font-bold mb-4 text-white">Harmonogram Spotkań</h3>
               <div className="space-y-3 text-gray-300">
-                <p><strong className="text-red-400">General Meetings:</strong> Every Friday 6:00 PM</p>
-                <p><strong className="text-red-400">Workshop Sessions:</strong> Saturdays 10:00 AM</p>
-                <p><strong className="text-red-400">Car Meets:</strong> First Sunday of each month</p>
+                <p><strong className="text-red-400">Spotkania ogólne:</strong> Każdy piątek 18:00</p>
+                <p><strong className="text-red-400">Sesje warsztatowe:</strong> Soboty 10:00</p>
+                <p><strong className="text-red-400">Spotkania motoryzacyjne:</strong> Pierwsza niedziela każdego miesiąca</p>
               </div>
               <Button className="w-full mt-6 bg-red-600 hover:bg-red-700">
-                Join the Club
+                Dołącz do Klubu
               </Button>
             </Card>
           </div>
@@ -205,7 +206,7 @@ const Index = () => {
             <span className="text-lg font-bold">AutoClub</span>
           </div>
           <p className="text-gray-400">
-            © 2025 University AutoClub. Fueling passion, building community.
+            © 2025 Uniwersytecki AutoClub. Rozpalamy pasję, budujemy społeczność.
           </p>
         </div>
       </footer>
