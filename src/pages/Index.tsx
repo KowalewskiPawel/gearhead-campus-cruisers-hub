@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Car, Users, Calendar, Trophy, Mail, Phone, MapPin, ChevronDown } from 'lucide-react';
+import { Car, Users, Trophy, Mail, Phone, MapPin, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 
@@ -24,7 +23,6 @@ const Index = () => {
               <button onClick={() => scrollToSection('home')} className="hover:text-red-400 transition-colors">Strona główna</button>
               <button onClick={() => scrollToSection('about')} className="hover:text-red-400 transition-colors">O nas</button>
               <button onClick={() => scrollToSection('projects')} className="hover:text-red-400 transition-colors">Projekty</button>
-              <button onClick={() => scrollToSection('events')} className="hover:text-red-400 transition-colors">Wydarzenia</button>
               <button onClick={() => scrollToSection('contact')} className="hover:text-red-400 transition-colors">Kontakt</button>
             </div>
           </div>
@@ -121,36 +119,6 @@ const Index = () => {
                   Regularne spotkania, aby zaprezentować pojazdy członków i dzielić się wiedzą motoryzacyjną.
                 </p>
               </div>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Events Section */}
-      <section id="events" className="py-20 px-4">
-        <div className="container mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-red-400">Nadchodzące Wydarzenia</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="bg-gray-800 border-red-500/20 p-6 hover:border-red-500/50 transition-all duration-300">
-              <div className="flex items-center mb-4">
-                <Calendar className="h-6 w-6 text-red-400 mr-3" />
-                <span className="text-red-400 font-semibold">15 marca 2025</span>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Coroczna Wystawa Samochodów</h3>
-              <p className="text-gray-300">
-                Prezentacja najlepszych pojazdów naszych członków i lokalnych entuzjastów. Nagrody w różnych kategoriach.
-              </p>
-            </Card>
-            
-            <Card className="bg-gray-800 border-red-500/20 p-6 hover:border-red-500/50 transition-all duration-300">
-              <div className="flex items-center mb-4">
-                <Calendar className="h-6 w-6 text-red-400 mr-3" />
-                <span className="text-red-400 font-semibold">2 kwietnia 2025</span>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Dzień na Torze</h3>
-              <p className="text-gray-300">
-                Profesjonalne doświadczenie toru wyścigowego dla członków do bezpiecznego testowania swoich pojazdów.
-              </p>
             </Card>
           </div>
         </div>
