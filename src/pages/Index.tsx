@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Car, Users, Trophy, Mail, Phone, MapPin, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -22,7 +21,7 @@ const Index = () => {
                 alt="Studenckie Koło Naukowe Samodziarzy Logo" 
                 className="h-10 w-10 rounded-full border-2 border-red-500/30"
               />
-              <span className="text-xl font-bold">AutoClub</span>
+              <span className="text-xl font-bold">Samochodziarze</span>
             </div>
             <div className="hidden md:flex space-x-6">
               <button onClick={() => scrollToSection('home')} className="hover:text-red-400 transition-colors px-3 py-1 rounded-md hover:bg-red-500/10">Strona główna</button>
@@ -41,7 +40,7 @@ const Index = () => {
         
         <div className="relative z-10 text-center px-4">
           <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent animate-fade-in">
-            AutoClub
+            Samochodziarze
           </h1>
           <p className="text-xl md:text-2xl mb-4 text-gray-300 animate-fade-in">
             Uniwersyteccy Miłośnicy Motoryzacji
@@ -133,7 +132,7 @@ const Index = () => {
       <section id="contact" className="py-20 px-4 bg-gray-800/50">
         <div className="container mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-red-400">Skontaktuj się z nami</h2>
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-1 gap-12">
             <div className="bg-gray-800/30 p-8 rounded-2xl backdrop-blur-sm border border-red-500/20">
               <h3 className="text-2xl font-bold mb-6">Dołącz do naszej społeczności</h3>
               <p className="text-gray-300 text-lg mb-8">
@@ -154,19 +153,11 @@ const Index = () => {
                   <span className="text-gray-300">Budynek Inżynierski, Sala 201</span>
                 </div>
               </div>
-            </div>
-            
-            <Card className="bg-gray-800/70 border-red-500/30 p-6 rounded-2xl backdrop-blur-sm">
-              <h3 className="text-xl font-bold mb-4 text-white">Harmonogram Spotkań</h3>
-              <div className="space-y-3 text-gray-300">
-                <p className="bg-gray-700/30 p-3 rounded-lg"><strong className="text-red-400">Spotkania ogólne:</strong> Każdy piątek 18:00</p>
-                <p className="bg-gray-700/30 p-3 rounded-lg"><strong className="text-red-400">Sesje warsztatowe:</strong> Soboty 10:00</p>
-                <p className="bg-gray-700/30 p-3 rounded-lg"><strong className="text-red-400">Spotkania motoryzacyjne:</strong> Pierwsza niedziela każdego miesiąca</p>
-              </div>
+              
               <Button className="w-full mt-6 bg-red-600 hover:bg-red-700 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
                 Dołącz do Klubu
               </Button>
-            </Card>
+            </div>
           </div>
         </div>
       </section>
@@ -176,10 +167,10 @@ const Index = () => {
         <div className="container mx-auto text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
             <Car className="h-6 w-6 text-red-500" />
-            <span className="text-lg font-bold">AutoClub</span>
+            <span className="text-lg font-bold">Samochodziarze</span>
           </div>
           <p className="text-gray-400">
-            © 2025 Uniwersytecki AutoClub. Rozpalamy pasję, budujemy społeczność.
+            © 2025 Uniwersyteccy Samochodziarze. Rozpalamy pasję, budujemy społeczność.
           </p>
         </div>
       </footer>
