@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Car, Users, Trophy, Mail, Phone, MapPin, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -15,8 +16,12 @@ const Index = () => {
       <nav className="fixed top-0 w-full bg-gray-900/90 backdrop-blur-sm z-50 border-b border-red-500/20">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <Car className="h-8 w-8 text-red-500" />
+            <div className="flex items-center space-x-3">
+              <img 
+                src="/lovable-uploads/a631496e-b1a6-4451-8247-55e1391809cd.png" 
+                alt="Studenckie Koło Naukowe Samodziarzy Logo" 
+                className="h-10 w-10"
+              />
               <span className="text-xl font-bold">AutoClub</span>
             </div>
             <div className="hidden md:flex space-x-6">
